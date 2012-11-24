@@ -306,6 +306,7 @@
           transform: translate3d(@x, @y, @z);
 }
 
+
 // Backface visibility
 // Prevent browsers from flickering when using CSS 3D transforms.
 // Default value is `visible`, but can be changed to `hidden
@@ -314,6 +315,14 @@
 	-webkit-backface-visibility: @visibility;
 	   -moz-backface-visibility: @visibility;
 	        backface-visibility: @visibility;
+}
+
+// Transform origin
+.backface-visibility(@x, @y){
+  -webkit-transform-origin: @x @y;
+     -moz-transform-origin: @x @y;
+      -ms-transform-origin: @x @y;
+          transform-origin: @x @y;
 }
 
 // Background clipping
