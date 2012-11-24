@@ -318,12 +318,21 @@
 }
 
 // Transform origin
-.transform-origin(@x, @y){
+.transform-origin(@x: 0, @y: 0){
   -webkit-transform-origin: @x @y;
      -moz-transform-origin: @x @y;
       -ms-transform-origin: @x @y;
           transform-origin: @x @y;
 }
+
+// Backface visiblity
+.backface-visibility(@display: hidden){
+  -webkit-backface-visibility: @display;
+     -moz-backface-visibility: @display;
+      -ms-backface-visibility: @display;
+          backface-visibility: @display;
+}
+
 
 // Background clipping
 // Heads up: FF 3.6 and under need "padding" instead of "padding-box"
