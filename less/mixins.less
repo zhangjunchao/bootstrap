@@ -100,6 +100,16 @@
   white-space: nowrap;
 }
 
+// Text selection
+// -------------------------
+// Prohibit text selection or highlighting. Helpful for interactive elements.
+.unselectable() {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
 // CSS image replacement
 // -------------------------
 // Source: https://github.com/h5bp/html5-boilerplate/commit/aa0396eae757
